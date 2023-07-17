@@ -1,0 +1,357 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root{
+    --color-text:rgb(69, 58, 58);
+    --color-back:rgb(225, 223, 223);
+}
+
+h1, h2, h4, p, a{
+    color: var(--color-text);
+}
+
+h2{
+    font-size: 35px;
+}
+
+h4{
+    font-size: 25px;
+}
+
+body{
+    letter-spacing: normal;
+    line-height: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Nav start */
+.navbar{
+    /* background-color: bisque; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+
+}
+
+.logo{
+    display: flex;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 16px;
+    margin-right: 24px;
+    /* background-color: blueviolet; */
+    
+}
+
+/* .navigation li{
+    list-style-type: none;
+    display: inline-block;
+    align-items: right;
+    margin-left: 16px;
+} */
+
+.navigation img{
+    display: none;
+}
+.navigation li a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+.logo img{
+    width: 40px;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.logo h1{
+    font-size: 32px;
+}
+
+.logo-lean{
+    font-weight: normal;
+    color: rgb(169, 168, 168) !important;
+}
+
+/* Nav ended */
+
+/* Section-1 start */
+.main{
+    display: flex;
+    background-color: var(--color-back);
+}
+
+.main .mobile-img{
+    display: none;
+}
+
+.section-img{
+    width: 60%;
+    margin: 32px 24px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin-left: 24px;
+}
+
+.main-content h1{
+    font-size: 50px;
+}
+
+.main-content p{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.btn{
+    width: 250px;
+    color: white;
+    background-color: rgb(56, 65, 56);
+    padding: 10px 0px;
+    text-align: center;
+    text-decoration: none;
+}
+/* section 1 ends */
+
+/* Section info start */
+
+.info{
+    display: flex;
+    width: 100%;
+}
+
+.info-left{
+    width: 60%;
+    margin-left: 24px;
+    padding:32px 0px;
+    /* background-color: bisque; */
+}
+
+.info-left img{
+    width:100%;
+}
+
+.info-left h2{
+    font-size: 35px;
+    margin: 32px 0 24px 0;
+}
+
+.info-left h4{
+    margin-top: 24px;
+    font-size: 25px;
+}
+
+.info-right{
+    width: 38%;
+    padding:16px 24px 32px 24px;
+    /* background-color: aqua; */
+}
+
+.right-mobile-img{
+    display: none;
+}
+
+.info-right-content{
+    width: 100%;
+    display: flex;
+    padding:16px;
+    
+}
+
+.info-right-img{
+    width: 35%;
+    height: auto;
+}
+
+.info-content{
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    
+}
+
+.back{
+    background-color: var(--color-back);
+}
+
+.info-content h4{
+    font-size: 25px;
+}
+
+.info-content p{
+    font-size: 18px;
+}
+
+
+.info-content a{
+    text-decoration: none;
+    color: blueviolet;
+}
+
+/* Section info ended */
+
+/* Section learn started */
+.learn{
+    padding: 32px 72px;
+    background-color: rgb(234, 233, 233);
+}
+
+.learn h2{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+.row-1{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    /* background-color: bisque;
+    border: 1px solid black; */
+    margin: 32px 0px;
+
+}
+
+.row-2{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+
+}
+
+.grid{
+    background-color: white;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* justify-content: center; */
+}
+
+.grid img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.grid-content{
+    margin: 16px auto 24px 16px;
+}
+
+.grid-content h4{
+    font-size: 25px;
+}
+
+.grid-content p{
+    margin-top: 8px;
+}
+
+/* Section learn ended */
+
+/* Section thesis started */
+
+.thesis-container{
+    padding: 32px 24px;
+}
+
+.thesis-container h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+.thesis{
+    display: inline-flex;
+    margin-top: 32px;
+}
+
+.thesis-left{
+    width: 60%;
+    padding: 0px 24px 24px 0px;
+
+}
+
+.thesis-left video{
+    width: 100%;
+}
+
+.thesis-left h4{
+    margin: 24px 0px 8px 0px;
+    font-size: 25px;
+} 
+
+
+.thesis-right-1{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+}
+
+/* .thesis-right-2{
+    display: flex;
+    padding: 16px;
+    gap: 16px;
+} */
+
+.thesis-right-img{
+    width:35%;
+    height: auto;
+}
+
+.thesis-right-content{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 16px;
+}
+
+.thesis-right-content h4{
+    font-size: 25px;
+    margin-bottom: 16px;
+}
+
+
+/* section thesis ended */
+
+/* footer start */
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 16px 24px 50px 24px;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+
+.footer-right li a{
+    text-decoration: none;
+    font-size: 18px;
+}
+
